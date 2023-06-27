@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: 'Roboto', sans-serif;
+    color: white; 
+    font-size: 2rem;
+}
+
+.video{
+    width: 100vw;
+    object-fit: cover;
+    position: fixed;
+}
+
+.header{
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding-top: 2%;
+    flex-direction: column;
+    gap:10px;
+    animation: my-animation ease-out 84s infinite;
+}
+
+@keyframes my-animation{
+    0%{
+        opacity: 0;
+    }
+    15%{
+        opacity: .25;
+    }
+    25%{
+        opacity: .50;
+    }
+    50%{
+        opacity: .25;
+    }
+    75%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.header2{
+    height: 100vh;
+    position: relative;
+    top: -650px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding-top: 2%;
+    flex-direction: column;
+    gap:10px;
+    opacity: 0;   
+    animation-delay: 81s;
+    animation: my-animation2 ease-out 84s;
+}
+
+@keyframes my-animation2{
+    0%{
+        opacity: 0;
+    }
+    15%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 0;
+    }
+    96%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
